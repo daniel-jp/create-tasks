@@ -1,0 +1,108 @@
+    /* ########################
+            TO-DO LIST STYLE
+       ######################## */
+    
+    body {
+        background: url(/img/task1.jpg)no-repeat center center/ cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        background: #202024;
+        padding: 40px;
+        border-radius: 20px;
+    }
+    
+    .container h2 {
+        margin-top: -10px;
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+    }
+    
+    #add-task-container {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px 2px;
+        background: rgba(162, 61, 213, 0.941);
+        border-radius: 5px;
+        box-shadow: 0 0 20px;
+        margin-bottom: 20px;
+    }
+    
+    input {
+        background-color: rgb(234, 229, 229);
+        text-align: center;
+        flex: 5;
+        border-radius: 25px;
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    
+    #add-task {
+        flex: 1;
+        transition: .3s;
+        font-size: 1.2rem;
+        padding: 5px;
+        background-color: white;
+        color: rgb(17, 109, 17);
+        border: green 1px solid 2px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    #add-task:hover {
+        background-color: rgb(20, 152, 57);
+        color: rgb(240, 246, 240);
+    }
+    /* Styling for task which get added to to-do list*/
+    
+    .task {
+        background-color: black;
+        border-radius: 0 0 3px;
+        padding: 22px;
+        margin-bottom: 5px;
+        display: flex;
+        color: rgb(188, 183, 183);
+        justify-content: space-between;
+    }
+    
+    .task li {
+        list-style: none;
+        flex: 1;
+        padding: 5px;
+        font-size: 1.3rem;
+        margin: 10px;
+    }
+    
+    .task button {
+        flex: 1;
+        border-radius: 10px;
+        background-color: #0e0d0df9;
+        cursor: pointer;
+    }
+    
+    .task .checkTask {
+        color: orange;
+        margin-right: 5px;
+        font-size: 1.3rem;
+    }
+    
+    .task .checkTask:hover {
+        background-color: orange;
+        color: #fff;
+    }
+    
+    .task .deleteTask {
+        color: red;
+        font-size: 1.3rem;
+    }
+    
+    .task .deleteTask:hover {
+        background-color: red;
+        color: #fff;
+    }
